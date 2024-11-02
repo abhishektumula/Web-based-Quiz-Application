@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Dashboard</title>
+    <link rel="stylesheet" href="Styles\dashboard.css" />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <header>
+        <div class="user-info">
+          <div class="profile-icon">
+            <img
+              src="source/image.png"
+              alt="Profile Picture"
+              id="profile-pic"
+            />
+          </div>
+          <span id="regNoDisplay">42733119</span>
+        </div>
+      </header>
+
+      <main>
+        <h1>Quiz Dashboard</h1>
+        <div class="quiz-box">
+          <div class="quiz-block">
+            <img
+              src="source/attempt now img.jpg"
+              alt="Attempt Now"
+              class="quiz-image"
+            />
+            <h2>Attempt Now</h2>
+            <button onclick="location.href='main_quiz.html'">
+              Attempt Now
+            </button>
+          </div>
+          <div class="quiz-block">
+            <img
+              src="source/a672835a-bd85-4f1d-832b-3182bac46d96.jpg"
+              alt="Upcoming Events"
+              class="quiz-image"
+            />
+            <h2>Upcoming Events</h2>
+          </div>
+          <div class="quiz-block">
+            <img
+              src="source/762298e6-b83b-4016-be94-0dc582d197f9.jpg"
+              alt="Statistics"
+              class="quiz-image"
+            />
+            <h2>Upcoming Events</h2>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="dashboard.js"></script>
+  </body>
+</html>

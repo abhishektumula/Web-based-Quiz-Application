@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School Quiz Login</title>
+    <link rel="stylesheet" href="Styles\styles.css" />
+  </head>
+  <body>
+    <div class="login-page">
+      <!-- Left Side with Video -->
+      <div class="video-container">
+        <video autoplay muted loop>
+          <source src="source/green.mp4" type="video/mp4" />
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+
+      <!-- Right Side with Login Form -->
+      <div class="form-container">
+        <h1 class="login-title">Welcome Back</h1>
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="regNo">Register Number</label>
+            <input
+              type="text"
+              id="regNo"
+              name="regNo"
+              required
+              placeholder="Enter Register Number"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="dob">Date of Birth (Password)</label>
+            <input
+              type="password"
+              id="dob"
+              name="dob"
+              required
+              placeholder="Enter Password"
+            />
+          </div>
+
+          <button type="submit" class="btn">Login</button>
+        </form>
+        <p id="error-msg"></p>
+      </div>
+    </div>
+
+    <script src="login.js"></script>
+  </body>
+</html>

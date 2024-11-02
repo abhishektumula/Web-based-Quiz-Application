@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #011812;
+  color: #ffffff;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: flex-end; /* Align to the right */
+  align-items: center;
+  background-color: #01191e;
+  padding: 10px 20px;
+}
+
+/* User Info */
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+#regNoDisplay {
+  margin-left: 15px;
+  font-size: 1.5em;
+}
+
+/* Profile Icon */
+.profile-icon img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Main Section */
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Quiz Box */
+.quiz-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Quiz Block Styles */
+.quiz-block {
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  padding: 10px;
+  width: 30%; /* Set width for smaller blocks */
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s;
+  margin: 10px; /* Add space between blocks */
+}
+
+.quiz-block:hover {
+  transform: scale(1.02); /* Slight scale for hover effect */
+  box-shadow: 0 0 20px rgba(0, 211, 56, 0.5); /* Neon purple shadow on hover */
+}
+
+/* Quiz Image Styles */
+.quiz-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9; /* Maintain aspect ratio */
+  border-radius: 10px;
+}
+
+/* Button Styles */
+button {
+  padding: 10px 20px;
+  background-color: #6200ee;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #00b35f;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+  .quiz-box {
+    flex-direction: column;
+  }
+
+  .quiz-block {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
